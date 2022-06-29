@@ -1,5 +1,23 @@
 # Advertising
 # > General
+
+#解锁网易云音乐节点
+host-suffix, local, direct
+ip-cidr, 8.8.8.8/24, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 224.0.0.0/4, direct
+ip6-cidr, fe80::/10, direct
+host-suffix, music.126.net, direct
+host-suffix, safebrowsing.urlsec.qq.com, reject
+host-suffix, safebrowsing.googleapis.com, reject
+host-suffix, lookup.api.bsb.baidu.com, reject
+#绕过企业证书过期
+host, ocsp.apple.com, reject
+
 DOMAIN-KEYWORD,adservice,REJECT
 DOMAIN-SUFFIX,1phads.com,REJECT
 DOMAIN-SUFFIX,1rtb.com,REJECT
